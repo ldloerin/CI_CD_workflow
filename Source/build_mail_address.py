@@ -13,10 +13,11 @@ class BuildMailAddress(GetInput):
         self.mail_address = self.first_name
         self.mail_address += self.separator
         self.mail_address += self.last_name
-        self.mail_address += '@'
+        self.mail_address += "@"
         self.mail_address += self.domain
         self.mail_address = self.mail_address.lower()
         print(self.mail_address)
+
 
 my_code = BuildMailAddress(__file__)
 my_code.execute_workflow()
