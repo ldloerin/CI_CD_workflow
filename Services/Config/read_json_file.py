@@ -14,7 +14,7 @@ class ReadJsonFile(object):
     def load(json_path, key=""):
         if (ReadJsonFile.is_json_path_valid(json_path)):
             try:
-                with open(json_path, 'r') as json_path:
+                with open(json_path, "r") as json_path:
                     inputs = json.load(json_path)
                     if key == "":
                         return inputs
