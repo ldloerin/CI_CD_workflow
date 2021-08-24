@@ -8,6 +8,7 @@ from Source.build_mail_address import BuildMailAddress
 
 config = GetInput(__file__)
 
+
 class TestClass:
     def test_001_build_mail_address(self):
         test_code_file = os.path.join(
