@@ -3,7 +3,6 @@ import os
 
 
 class ReadJsonFile(object):
-
     @staticmethod
     def is_json_path_valid(json_path):
         is_valid = os.path.exists(json_path)
@@ -12,7 +11,7 @@ class ReadJsonFile(object):
 
     @staticmethod
     def load(json_path, key=""):
-        if (ReadJsonFile.is_json_path_valid(json_path)):
+        if ReadJsonFile.is_json_path_valid(json_path):
             try:
                 with open(json_path, "r") as json_path:
                     inputs = json.load(json_path)

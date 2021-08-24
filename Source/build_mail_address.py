@@ -3,10 +3,9 @@ import sys
 
 sys.path.append(os.path.split(os.path.dirname(__file__))[0])
 from Services.Config.get_input import GetInput
- 
+
 
 class BuildMailAddress(GetInput):
-
     def execute_workflow(self):
         self.__build_mail_adrress()
 
