@@ -1,7 +1,4 @@
-import os
-import sys
-
-sys.path.append(os.path.split(os.path.dirname(__file__))[0])
+import path_append
 from Services.Config.get_input import GetInput
 
 

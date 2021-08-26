@@ -20,8 +20,11 @@ class ReadJsonFile(object):
                     elif key in inputs:
                         return inputs[key]
                     else:
+                        print('No key in configuration file')
                         return {}
             except:
+                print('Check configuration file for formatting errors')
                 return {}
         else:
+            print('Could not open configuration file')
             return {}

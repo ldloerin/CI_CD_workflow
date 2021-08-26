@@ -1,8 +1,11 @@
 import os
-import sys
-
-sys.path.append(os.path.split(os.path.dirname(__file__))[0])
 import pytest
+<<<<<<< HEAD
+import path_append
+=======
+import sys
+sys.path.append(os.path.split(os.path.dirname(__file__))[0])
+>>>>>>> ed4f2587c248dd47ab853d7bd3fac048076d7cc8
 from Services.Config.get_input import GetInput
 from Source.build_mail_address import BuildMailAddress
 
