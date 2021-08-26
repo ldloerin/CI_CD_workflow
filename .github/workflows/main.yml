@@ -3,12 +3,17 @@ name: python pipeline
 on: push
 
 jobs:
-  python-lint:
+  python-pipeline:
     runs-on: ubuntu-latest
     name: CI workflow
     steps:
     - name: checkout source repo
       uses: actions/checkout@v2
+        
+    - name: Setting up the python environment
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
 
     - name: linting
       uses: alexanderdamiani/pylinter@v1.3.0
