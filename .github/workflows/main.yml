@@ -10,8 +10,8 @@ jobs:
     - name: checkout source repo
       uses: actions/checkout@v2
 
-    - name: linting
-      uses: alexanderdamiani/pylinter@v1.3.0
+    - name: python linting
+      uses: ldloerin/py_linter
       with:
         python-root: '.'
         flake8-flags: ''
