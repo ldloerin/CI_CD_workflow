@@ -27,8 +27,3 @@ jobs:
       uses: ad-m/github-push-action@v0.5.0
       with:
         github_token: ${{ secrets.GH_ACCESS_TOKEN }}
-<<<<<<< HEAD
-        branch: ${{ github.ref }}
-=======
-        branch: ${{ github.ref }}
->>>>>>> ed4f2587c248dd47ab853d7bd3fac048076d7cc8
