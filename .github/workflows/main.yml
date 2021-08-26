@@ -24,7 +24,6 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 --ignore=E402
-        pylint
 
 #    - name: linting
 #      uses: alexanderdamiani/pylinter@v1.3.0
