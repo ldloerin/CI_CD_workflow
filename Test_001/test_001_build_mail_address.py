@@ -1,8 +1,10 @@
 import os
 import pytest
-import path_append
+from path_append import PathAppend
 from Services.Config.get_input import GetInput
 from Source.build_mail_address import BuildMailAddress
+
+PathAppend()
 
 config = GetInput(__file__)
 
