@@ -1,10 +1,9 @@
 import os
 import pytest
-from path_append import PathAppend
+import sys
+sys.path.append(os.path.split(os.path.dirname(__file__))[0])
 from Services.Config.get_input import GetInput
 from Source.build_mail_address import BuildMailAddress
-
-PathAppend.statement()
 
 config = GetInput(__file__)
 

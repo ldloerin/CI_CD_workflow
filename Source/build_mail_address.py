@@ -1,6 +1,7 @@
-from path_append import PathAppend
+import os
+import sys
+sys.path.append(os.path.split(os.path.dirname(__file__))[0])
 from Services.Config.get_input import GetInput
-#PathAppend.statement()
 
 
 class BuildMailAddress(GetInput):
