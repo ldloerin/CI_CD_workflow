@@ -23,8 +23,8 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        flake8 --ignore=E501,E231 *.py
-        pylint --disable=C0301 --disable=C0326 *.py
+        flake8
+        pylint
 
 #    - name: linting
 #      uses: alexanderdamiani/pylinter@v1.3.0
