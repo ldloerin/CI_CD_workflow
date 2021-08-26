@@ -1,8 +1,5 @@
 import os
-from path_append import PathAppend
 from Services.Config.read_json_file import ReadJsonFile
-
-PathAppend()
 
 
 class GetInput:

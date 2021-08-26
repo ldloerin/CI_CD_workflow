@@ -1,7 +1,6 @@
 from path_append import PathAppend
 from Services.Config.get_input import GetInput
-
-PathAppend()
+#PathAppend.statement()
 
 
 class BuildMailAddress(GetInput):
