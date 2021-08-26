@@ -25,6 +25,6 @@ class TestClass:
         y = 1
         assert x == y
 
-    @pytest.mark.parametrize("x, y, z", [(1, 1, 2), (2, 2, 5)])
+    @pytest.mark.parametrize("x, y, z", [(1, 1, 2), (2, 2, 4)])
     def test_003_multiple_assert(self, x, y, z):
         assert x + y == z
