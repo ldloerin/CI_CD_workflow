@@ -2,23 +2,19 @@ import os
 import pytest
 import sys
 sys.path.append(os.path.split(os.path.dirname(__file__))[0])
-from Services.Config.get_input import GetInput
-from Source.build_mail_address import BuildMailAddress
+from TestServices.Config.get_test_input import GetTestInput
+from TestServices.AccessMethods.run_build_mail_address import RunBuildMailAddress
 
-config = GetInput(__file__)
+# Get test cofiguration input
+config = GetTestInput(__file__)
+
+# Run method to be tested
+input = RunBuildMailAddress(config)
 
 
 class TestClass:
     def test_001_build_mail_address(self):
-        test_code_file = os.path.join(
-            os.path.split(os.path.dirname(__file__))[0],
-            config.test_code_path,
-            config.test_code_name,
-        )
-        my_code = BuildMailAddress(test_code_file)
-        my_code.execute_workflow()
-        ret_value = my_code.mail_address
-        assert ret_value == config.assert_value
+        assert input.mail_address == config.assert_value
 
     def test_002_simple_assert(self):
         x = 1
