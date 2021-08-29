@@ -1,6 +1,6 @@
 name: python pipeline
 
-on: [push, pull-request]
+on: [push]
 
 jobs:
   python-pipeline:
