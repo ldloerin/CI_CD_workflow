@@ -4,13 +4,8 @@ on: [push]
 
 jobs:
   python-pipeline:
-    runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-        os: [windows-latest, ubuntu-latest]
-    # runs-on: [windows-latest, ubuntu-latest]
-    # name: CI workflow
+    runs-on: [ubuntu-latest]
+    name: CI workflow
     steps:
     - name: checkout source repo
       uses: actions/checkout@v2
