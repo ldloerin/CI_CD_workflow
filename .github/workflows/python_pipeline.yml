@@ -1,10 +1,10 @@
 name: python pipeline
 
-on: push
+on: [push]
 
 jobs:
   python-pipeline:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest]
     name: CI workflow
     steps:
     - name: checkout source repo
