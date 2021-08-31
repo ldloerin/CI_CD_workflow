@@ -18,5 +18,4 @@ jobs:
 
       - name: Run a one-line script
         run: 
-          echo '---------------------------------------------\n'
           ls -l
