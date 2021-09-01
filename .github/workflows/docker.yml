@@ -11,3 +11,7 @@ jobs:
       - name: Docker build python
         run: |
           docker build ./python -t aimvector/python:1.0.0
+      
+      - name: List docker images
+        run: |
+          docker images
