@@ -8,9 +8,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Docker build python
+
+      - name: Docker build
         run: |
-          docker build ./python -t aimvector/python:1.0.0
+          docker build -t dloerin/mail_address_demo:1.0 ./docker 
       
       - name: List docker images
         run: |
