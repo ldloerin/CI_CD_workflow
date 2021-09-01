@@ -17,7 +17,7 @@ jobs:
 
       - name: Docker build
         run: |
-          docker build -t dloerin/mail_address_demo:1.0 ./docker 
+          docker build -t mail_address_demo:1.0 ./docker 
       
       - name: List docker images
         run: |
