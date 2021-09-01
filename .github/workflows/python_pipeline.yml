@@ -9,6 +9,10 @@ jobs:
     steps:
     - name: checkout source repo
       uses: actions/checkout@v2
+      
+    - name: List folder content
+      run:
+        ls -l
         
     - name: Setting up the python environment
       uses: actions/setup-python@v2
