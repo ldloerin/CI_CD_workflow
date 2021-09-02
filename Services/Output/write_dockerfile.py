@@ -4,7 +4,7 @@ import os
 
 class WriteDockerfile():
     def __init__(self, input):
-        self.dockerfile = os.path.join(input.root_path, 'docker', 'dockerfile')
+        self.dockerfile = os.path.join(input.root_path, 'Docker', 'dockerfile')
         self.mail_address = input.mail_address
         self.__build_content()
         self.__write_file()
