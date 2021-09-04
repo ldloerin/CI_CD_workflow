@@ -2,7 +2,7 @@ import os
 import sys
 file_path = os.path.split(os.path.dirname(__file__))[0]
 sys.path.append(os.path.split(file_path)[0])
-from Source.build_mail_address import BuildMailAddress
+from Main.main import BuildMailAddress
 
 
 class RunBuildMailAddress():
