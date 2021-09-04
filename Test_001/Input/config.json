@@ -1,5 +1,5 @@
 {
-    "test_code_name": "build_mail_address.py",
-    "test_code_path": "Source",
+    "test_code_name": "main.py",
+    "test_code_path": "Main",
     "assert_value": "david.loerinci@gmail.com"    
 }
