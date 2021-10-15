@@ -11,7 +11,6 @@ config = GetTestInput(__file__)
 # Run method to be tested
 input = RunBuildMailAddress(config)
 
-
 class TestClass:
     def test_001_build_mail_address(self):
         assert input.mail_address == config.assert_value
